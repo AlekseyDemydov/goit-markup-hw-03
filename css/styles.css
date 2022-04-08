@@ -12,6 +12,10 @@ body{
     background: var(--background-color);
    
 }
+section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 button{
     cursor: pointer;
     font-family: 'Roboto';
@@ -23,11 +27,17 @@ li{
 a{
     text-decoration: none;
 }
+.benefits-section ul,.work-section ul,.team-section ul,.portfolio-section ul{
+    display: flex;
+    justify-content: center;
+}
 /* header */
 header{
     background: var(--background-color);
     display: flex;
     flex-direction: row;
+    align-items: center;
+    
 }
 .web{
         
@@ -99,8 +109,6 @@ header{
     background: var(--brand-color);
 }
 .box-word{
-    
-    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -284,10 +292,12 @@ footer{
     
     color: var(--text-color);
 }
-.button-portfolio{
-justify-content: center;
+/* .portfolio-section ul{
+    display: flex;
+    justify-content: center;
+} */
 
-}
+
 .button-portfolio button{
     
     font-weight: 500;
@@ -313,9 +323,19 @@ justify-content: center;
     color: var(--background-color);
     background-color: var(--button-color);
 }
-.img-block{    
+.net{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.net li{    
     width: 370px;
     height: 404px;
+
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 90px) / 3);
         
     background: var(--background-color);
     border: 1px solid #EEEEEE;
