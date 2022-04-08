@@ -24,10 +24,6 @@ body{
     width: 1200px;
     margin: 0 auto;
 }
-section{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 button{
     cursor: pointer;
     font-family: 'Roboto';
@@ -43,6 +39,7 @@ a{
     display: flex;
     justify-content: center;
 }
+
 /* header */
 header a,header ul,header nav, header div{
     background: var(--background-color);
@@ -125,25 +122,37 @@ padding-right: 50px;
     color: var(--second-text);
 }
 /* blue box */
+.box-section div{
+   padding-top: 200px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
 .box-section{
-    
+    height: 600px;
     background: var(--brand-color);
+    
 }
 .box-word{
+    
+    width: 696px;
+    height: 120px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     /* or 136% */
-    
+   
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    
+    margin:0;
     color: var(--background-color);
 }
 
 .button-box{
-    
+    width: 200px;
+    height: 50px;
+    margin-top: 27px;
     background: var(--button-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -168,11 +177,18 @@ padding-right: 50px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    
+    margin:50px auto;
     color: var(--text-color);
 }
+.benefits-section ul{
+margin: 0 auto;
+padding: 0;
+}
+.benefits-section li{
+    margin:0 15px;
+}
 .detal{
-    
+   margin: 0 0 10px 0; 
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -182,6 +198,7 @@ text-transform: uppercase;
 color: var(--text-color);
 }
 .detal-op{
+    margin: 0;
 font-size: 14px;
 line-height: 1.71;
 /* or 171% */
@@ -190,8 +207,15 @@ letter-spacing: 0.03em;
 
 color: var(--second-text);
 }
+.work-section ul{
+    margin: 0 auto;
+    padding: 0;
+}
+.work-section li{
+    padding: 0 15px;
+}
 .work-section h2{
-        
+        margin: 94px 0 50px 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -200,12 +224,15 @@ color: var(--second-text);
     
     color: var(--text-color);
 }
-
-.team-section h2{
-    
-    
+.team-section{
     background: #F5F4FA;
-
+    height: 648px;
+    margin-top: 94px;
+}
+.team-section h2{
+    padding-top: 94px;
+    margin-bottom: 50px;
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -214,15 +241,16 @@ color: var(--second-text);
     
     color: var(--text-color);
 }
-
-footer{
-    background-color: var(--brand-color);
+.team-section ul{
+    padding: 0;
 }
 
-.img-box{
+
+
+.team-section li{
     width: 270px;
     height: 368px;
-       
+    margin: 0 15px;
     background: var(--background-color);
     /* material shadow v1 */
     
@@ -252,6 +280,9 @@ footer{
     letter-spacing: 0.03em;
     
     color: var(--second-text);
+}
+footer{
+    background-color: var(--brand-color);
 }
 .web-down{
    
@@ -303,6 +334,9 @@ footer{
 }
 
 /* portfolio */
+.portfolio-section{
+    padding: 0;
+}
 .portfolio-section h1{
     font-style: normal;
     font-weight: 700;
@@ -312,6 +346,7 @@ footer{
     letter-spacing: 0.03em;
     
     color: var(--text-color);
+    margin-top: 94px;
 }
 
 .button-portfolio button{
@@ -320,7 +355,7 @@ footer{
     font-size: 16px;
     line-height: 1.63;
     /* identical to box height, or 162% */
-    
+    margin: auto 4px;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -339,16 +374,21 @@ footer{
     color: var(--background-color);
     background-color: var(--button-color);
 }
+.button-portfolio{
+    padding: 0 0 56px 0;
+    margin: 0;
+}
 .net{
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
+    padding: 0;
 }
+
 .net li{    
     width: 370px;
     height: 404px;
-
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc((100%-90)/3);
@@ -357,6 +397,7 @@ footer{
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
 }
+
 .name-box{
     font-weight: 700;
     font-size: 18px;
