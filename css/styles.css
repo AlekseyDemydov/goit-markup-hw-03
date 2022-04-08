@@ -1,0 +1,344 @@
+:root{
+    --background-color: #ffffff;
+    --brand-color: #2F303A;
+    --button-color: #2196F3;
+    --text-color: #212121;
+    --second-text: #757575;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+     'Open Sans', 'Helvetica Neue', sans-serif;
+        
+    background: var(--background-color);
+   
+}
+button{
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* header */
+header{
+    background: var(--background-color);
+    display: flex;
+    flex-direction: row;
+}
+.web{
+        
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    
+    letter-spacing: 0.03em;
+    
+    color: var(--button-color);
+}
+.studio-up{
+    
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    
+    letter-spacing: 0.03em;
+    
+    color: var(--text-color);
+}
+
+.studio:hover,.portfolio:hover,.contacts:hover,.mail:hover,.tel:hover,.map:hover,.mail-down:hover,.tel-down:hover,
+.button-portfolio:hover{
+    color: var(--button-color);
+}
+.studio:focus,.portfolio:focus,.contacts:focus,.mail:focus,.tel:focus,.map:focus,.mail-down:focus,.tel-down:focus,
+.button-portfolio:focus {
+    color: var(--button-color);}
+.navigation,
+.info{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.active{ --text-color:var(--button-color);}
+.studio{
+  
+    color: var(--text-color);
+}
+.portfolio{
+    
+    color: var(--text-color);
+}
+.contacts{
+   
+    color: var(--text-color);
+}
+.tel{
+   
+    color: var(--second-text);
+}
+.mail{
+   
+    color: var(--second-text);
+}
+/* blue box */
+.box-section{
+    
+    background: var(--brand-color);
+}
+.box-word{
+    
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /* or 136% */
+    
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    color: var(--background-color);
+}
+
+.button-box{
+    
+    background: var(--button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    /* identical to box height, or 188% */
+    
+    
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    color: var(--background-color);
+}
+/* main */
+.benefits-section h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--text-color);
+}
+.detal{
+    
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: var(--text-color);
+}
+.detal-op{
+font-size: 14px;
+line-height: 1.71;
+/* or 171% */
+
+letter-spacing: 0.03em;
+
+color: var(--second-text);
+}
+.work-section h2{
+        
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--text-color);
+}
+
+.team-section h2{
+    
+    
+    background: #F5F4FA;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--text-color);
+}
+
+footer{
+    background-color: var(--brand-color);
+}
+
+.img-box{
+    width: 270px;
+    height: 368px;
+       
+    background: var(--background-color);
+    /* material shadow v1 */
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    /* identical to box height */
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--text-color);
+}
+.name-op{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    /* identical to box height */
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--second-text);
+}
+.web-down{
+   
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    
+    letter-spacing: 0.03em;
+    
+    color: var(--button-color);
+}
+.studio-down{
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    
+    letter-spacing: 0.03em;
+    
+    color: var(--background-color);
+}
+.map{
+    font-style: normal;
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 1.7;
+    /* or 171% */
+    
+    letter-spacing: 0.03em;
+    
+    color: var(--background-color);
+}
+.mail-down,.tel-down{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    /* or 171% */
+    
+    letter-spacing: 0.03em;
+    
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* portfolio */
+.portfolio-section h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--text-color);
+}
+.button-portfolio{
+justify-content: center;
+
+}
+.button-portfolio button{
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    /* identical to box height, or 162% */
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    background: var(--background-color);
+    border-radius: 4px;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.button-portfolio button:hover{
+    color: var(--background-color);
+    background-color: var(--button-color);
+}
+.button-portfolio button:focus {
+    color: var(--background-color);
+    background-color: var(--button-color);
+}
+.img-block{    
+    width: 370px;
+    height: 404px;
+        
+    background: var(--background-color);
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
+.name-box{
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    /* identical to box height, or 200% */
+    
+    letter-spacing: 0.06em;
+    
+    color: var(--text-color);
+}
+.name-op-box{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    /* identical to box height, or 188% */
+    
+    letter-spacing: 0.03em;
+    
+    color: var(--second-text);
+}
