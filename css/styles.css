@@ -281,57 +281,7 @@ color: var(--second-text);
     
     color: var(--second-text);
 }
-footer{
-    background-color: var(--brand-color);
-}
-.web-down{
-   
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    /* identical to box height */
-    
-    letter-spacing: 0.03em;
-    
-    color: var(--button-color);
-}
-.studio-down{
-    
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    /* identical to box height */
-    
-    letter-spacing: 0.03em;
-    
-    color: var(--background-color);
-}
-.map{
-    font-style: normal;
-    font-weight: 450;
-    font-size: 14px;
-    line-height: 1.7;
-    /* or 171% */
-    
-    letter-spacing: 0.03em;
-    
-    color: var(--background-color);
-}
-.mail-down,.tel-down{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    /* or 171% */
-    
-    letter-spacing: 0.03em;
-    
-    color: rgba(255, 255, 255, 0.6);
-}
+
 
 /* portfolio */
 .portfolio-section{
@@ -380,23 +330,26 @@ footer{
 }
 .net{
     display: flex;
+    
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-    padding: 0;
-}
+    
 
-.net li{    
-    width: 370px;
-    height: 404px;
+ margin-left: -30px;
+ margin-top: -30px;
+    padding: 0;
+    list-style: none;
+}
+.net li{
     margin-left: 30px;
     margin-top: 30px;
-    flex-basis: calc((100%-90)/3);
-        
+      max-width: 370px;  
+    flex-basis: calc((100% - 90px) / 3);
     background: var(--background-color);
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
-}
+    }
+    
+   
 
 .name-box{
     font-weight: 700;
@@ -405,7 +358,6 @@ footer{
     /* identical to box height, or 200% */
     
     letter-spacing: 0.06em;
-    
     color: var(--text-color);
 }
 .name-op-box{
@@ -415,6 +367,63 @@ footer{
     /* identical to box height, or 188% */
     
     letter-spacing: 0.03em;
-    
     color: var(--second-text);
+}
+footer{
+    height: 252px;
+    background-color: var(--brand-color);
+}
+.container div{
+  padding-top: 60px;  
+}
+.web-down{
+   
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    
+    letter-spacing: 0.03em;
+    
+    color: var(--button-color);
+}
+.studio-down{
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    
+    letter-spacing: 0.03em;
+    
+    color: var(--background-color);
+}
+address{
+    padding-top: 20px;
+}
+.map{
+    font-style: normal;
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 1.7;
+    /* or 171% */
+    
+    letter-spacing: 0.03em;
+    
+    color: var(--background-color);
+}
+.mail-down,.tel-down{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    /* or 171% */
+    
+    letter-spacing: 0.03em;
+    
+    color: rgba(255, 255, 255, 0.6);
 }
