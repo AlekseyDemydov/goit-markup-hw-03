@@ -10,6 +10,7 @@ html{
     --background-color: #ffffff;
     --brand-color: #2F303A;
     --button-color: #2196F3;
+    --btn-color2:#F5F4FA;
     --text-color: #212121;
     --second-text: #757575;
 }
@@ -28,6 +29,7 @@ button{
     cursor: pointer;
     font-family: 'Roboto';
     font-style: normal;
+    border: none;
 }
 li{
     list-style-type: none;
@@ -314,7 +316,7 @@ color: var(--second-text);
     text-align: center;
     letter-spacing: 0.03em;
 
-    background: var(--background-color);
+    background: var(--btn-color2);
     border-radius: 4px;
 
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
