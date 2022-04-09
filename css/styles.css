@@ -41,6 +41,11 @@ a{
 }
 
 /* header */
+header{
+    height: 80px;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
 header a,header ul,header nav, header div{
     background: var(--background-color);
     display: flex;
@@ -404,6 +409,9 @@ footer{
 }
 address{
     padding-top: 20px;
+}
+address ul{
+    padding: 0;
 }
 .map{
     font-style: normal;
