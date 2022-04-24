@@ -6,6 +6,18 @@ html{
 *::after{
     box-sizing: inherit;
 }
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+div,
+span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 :root{
     --background-color: #ffffff;
     --brand-color: #2F303A;
@@ -24,6 +36,7 @@ body{
 .container{
     width: 1200px;
     margin: 0 auto;
+  
 }
 button{
     cursor: pointer;
@@ -44,9 +57,11 @@ a{
 
 /* header */
 header{
-    height: 80px;
-    border: 1px solid #EEEEEE;
+    /* border-bottom: 1px solid #EEEEEE; */
     box-sizing: border-box;
+    padding: 24px 0 25px 0;
+    border-bottom: 1px solid #EEEEEE;
+    
 }
 header a,header ul,header nav, header div{
     background: var(--background-color);
@@ -83,6 +98,7 @@ header a,header ul,header nav, header div{
     letter-spacing: 0.03em;
     
     color: var(--text-color);
+    margin-right: 93px;
 }
 
 .studio:hover,.portfolio:hover,.contacts:hover,.mail:hover,.tel:hover,.map:hover,.mail-down:hover,.tel-down:hover,
@@ -99,6 +115,7 @@ header a,header ul,header nav, header div{
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin: 0 auto;
     
 }
 .active{ --text-color:var(--button-color);}
@@ -106,12 +123,7 @@ header a,header ul,header nav, header div{
 padding-right: 50px;
     color: var(--text-color);
 }
-.navigation{
-    padding-left: 93px;
-}
-.info{
-    padding-left: 331px;
-}
+
 .portfolio{
     padding-right: 50px;
     color: var(--text-color);
@@ -130,7 +142,7 @@ padding-right: 50px;
 }
 /* blue box */
 .box-section div{
-   padding-top: 200px;
+   padding: 200px 0 200px 0;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -141,7 +153,8 @@ padding-right: 50px;
     
 }
 .box-word{
-    
+    font-family: 'Roboto';
+    font-style: normal;
     width: 696px;
     height: 120px;
     font-weight: 900;
@@ -156,40 +169,32 @@ padding-right: 50px;
     color: var(--background-color);
 }
 
-.button-box{
+.box-section button{
     width: 200px;
     height: 50px;
-    margin-top: 27px;
+    margin-top: 30px;
     background: var(--button-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    /* identical to box height, or 188% */
-    
-    
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    
-    color: var(--background-color);
 }
-/* main */
-.benefits-section h2{
+.button-word{
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin:50px auto;
-    color: var(--text-color);
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+color: var(--background-color);
+
 }
-.benefits-section ul{
-margin: 0 auto;
-padding: 0;
+
+
+/* main */
+.benefits-section{
+padding: 94px 0 94px 0;
 }
 .benefits-section li{
     margin:0 15px;
@@ -214,15 +219,12 @@ letter-spacing: 0.03em;
 
 color: var(--second-text);
 }
-.work-section ul{
-    margin: 0 auto;
-    padding: 0;
-}
+
 .work-section li{
-    padding: 0 15px;
+    padding: 50px 15px 94px 15px;
 }
 .work-section h2{
-        margin: 94px 0 50px 0;
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -234,12 +236,10 @@ color: var(--second-text);
 .team-section{
     background: #F5F4FA;
     height: 648px;
-    margin-top: 94px;
+    
 }
 .team-section h2{
-    padding-top: 94px;
-    margin-bottom: 50px;
-    
+    padding: 94px 0 50px 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -248,16 +248,12 @@ color: var(--second-text);
     
     color: var(--text-color);
 }
-.team-section ul{
-    padding: 0;
-}
 
 
 
 .team-section li{
     width: 270px;
-    height: 368px;
-    margin: 0 15px;
+    
     background: var(--background-color);
     /* material shadow v1 */
     
@@ -265,8 +261,12 @@ color: var(--second-text);
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    padding: 0 15px;
+    
 }
+
 .name{
+    padding-top: 30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -278,6 +278,7 @@ color: var(--second-text);
     color: var(--text-color);
 }
 .name-op{
+    padding: 10px 0 30px 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -305,17 +306,19 @@ color: var(--second-text);
     color: var(--text-color);
     margin-top: 94px;
 }
-
+.portfolio-bg-word{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.63;
+/* identical to box height, or 162% */
+margin: auto 4px;
+text-align: center;
+letter-spacing: 0.03em;
+padding: 6px 22px;
+}
 .button-portfolio button{
     
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    /* identical to box height, or 162% */
-    margin: auto 4px;
-    text-align: center;
-    letter-spacing: 0.03em;
-
+   
     background: var(--btn-color2);
     border-radius: 4px;
 
@@ -380,8 +383,8 @@ footer{
     height: 252px;
     background-color: var(--brand-color);
 }
-.container div{
-  padding-top: 60px;  
+footer .container{
+  padding: 60px 0 60px 0;  
 }
 .web-down{
    
@@ -409,11 +412,11 @@ footer{
     
     color: var(--background-color);
 }
-address{
-    padding-top: 20px;
+.container div{
+    margin-bottom: 20px;
 }
-address ul{
-    padding: 0;
+address li{
+    margin-top: 9px;
 }
 .map{
     font-style: normal;
