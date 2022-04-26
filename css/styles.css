@@ -120,13 +120,14 @@ header a,header ul,header nav, header div{
     
 }
 .active{ --text-color:var(--button-color);}
+
 .studio{
-padding-right: 50px;
+margin-right: 50px;
     color: var(--text-color);
 }
 
 .portfolio{
-    padding-right: 50px;
+    margin-right: 50px;
     color: var(--text-color);
 }
 .contacts{
@@ -134,7 +135,7 @@ padding-right: 50px;
     color: var(--text-color);
 }
 .tel{
-   padding-right: 50px;
+   margin-right: 50px;
     color: var(--second-text);
 }
 .mail{
@@ -253,7 +254,7 @@ color: var(--second-text);
 }
 .team-section{
     background: #F5F4FA;
-    height: 648px;
+    padding: 94px 0;
     
 }
 .team-section ul{
@@ -266,7 +267,7 @@ color: var(--second-text);
 }
 
 .team-section h2{
-    padding-top: 94px;
+    
     margin-bottom:50px;
     font-weight: 700;
     font-size: 36px;
@@ -298,7 +299,7 @@ color: var(--second-text);
 }
 .team-section ul div{
     text-align: center;
-    margin: 30px 0;
+    padding: 30px 0;
 
 }
 .name{
@@ -311,6 +312,7 @@ color: var(--second-text);
     letter-spacing: 0.03em;
     
     color: var(--text-color);
+    margin-bottom: 10px;
 }
 .name-op{
     font-weight: 400;
@@ -352,9 +354,9 @@ padding: 6px 22px;
     background: var(--btn-color2);
     border-radius: 4px;
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+    0px 2px 2px rgba(0, 0, 0, 0.12); */
 }
 .button-portfolio button:hover{
     color: var(--background-color);
@@ -419,6 +421,9 @@ footer{
 footer {
   padding: 60px 0 60px 0;  
 }
+.logo-down{
+    margin-bottom: 20px;
+}
 .web-down{
    
     font-family: 'Raleway';
@@ -447,7 +452,10 @@ footer {
 }
 
 address li{
-    margin-top: 9px;
+    margin-bottom: 9px;
+}
+address li:last-child{
+    margin-bottom: 0;
 }
 .map{
     font-style: normal;
