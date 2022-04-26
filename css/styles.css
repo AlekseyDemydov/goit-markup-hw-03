@@ -36,6 +36,7 @@ body{
 .container{
     width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
   
 }
 button{
@@ -50,7 +51,7 @@ li{
 a{
     text-decoration: none;
 }
-.benefits-section ul,.work-section ul,.portfolio-section ul{
+.benefits-section ul,.portfolio-section ul{
     display: flex;
     justify-content: center;
 }
@@ -115,7 +116,7 @@ header a,header ul,header nav, header div{
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin: 0 auto;
+    margin-left: auto;
     
 }
 .active{ --text-color:var(--button-color);}
@@ -219,12 +220,29 @@ letter-spacing: 0.03em;
 
 color: var(--second-text);
 }
-
+.work-section{
+    padding-bottom: 94px;
+}
+.work-section ul{
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding: 0;
+    list-style: none;
+}
 .work-section li{
-    padding: 50px 15px 94px 15px;
+   
+    margin-left: 30px;
+    margin-top: 30px;
+    
+    flex-basis: calc((100% - 120px) / 4);
+    background: var(--background-color);
+    box-sizing: border-box;
 }
 .work-section h2{
-    
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -248,7 +266,8 @@ color: var(--second-text);
 }
 
 .team-section h2{
-    padding: 94px 0 50px 0;
+    padding-top: 94px;
+    margin-bottom:50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -277,9 +296,12 @@ color: var(--second-text);
     background: var(--background-color);
     box-sizing: border-box;
 }
+.team-section ul div{
+    text-align: center;
+    margin: 30px 0;
 
+}
 .name{
-    padding-top: 30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -291,7 +313,6 @@ color: var(--second-text);
     color: var(--text-color);
 }
 .name-op{
-    padding: 10px 0 30px 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -316,13 +337,16 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.63;
 /* identical to box height, or 162% */
-margin: auto 4px;
+
 text-align: center;
 letter-spacing: 0.03em;
 padding: 6px 22px;
 }
 .button-portfolio li{
-    padding: 0 4px;
+    padding-right: 8px;
+}
+.button-portfolio li:last-child{
+    padding-right: 0;
 }
 .button-portfolio button{
     background: var(--btn-color2);
@@ -392,7 +416,7 @@ footer{
     height: 252px;
     background-color: var(--brand-color);
 }
-footer .container{
+footer {
   padding: 60px 0 60px 0;  
 }
 .web-down{
@@ -421,9 +445,7 @@ footer .container{
     
     color: var(--background-color);
 }
-.container div{
-    margin-bottom: 20px;
-}
+
 address li{
     margin-top: 9px;
 }
